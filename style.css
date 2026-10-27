@@ -1,0 +1,25 @@
+/* maudespinasse.com — palette & fonts from the old archmaje.com WordPress/Elementor CSS */
+@font-face{font-family:"Spectral SC";font-weight:400;font-display:swap;src:url(assets/fonts/spectralsc-ktkpalcrzonmaltgypmrfswl42e.woff2) format("woff2")}
+@font-face{font-family:"Spectral SC";font-weight:700;font-display:swap;src:url(assets/fonts/spectralsc-ktk0alcrzonmaltgypmrfs0exntqn4y.woff2) format("woff2")}
+@font-face{font-family:"Roboto";font-weight:400;font-display:swap;src:url(assets/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2) format("woff2")}
+@font-face{font-family:"Roboto Slab";font-display:swap;src:url(assets/fonts/robotoslab-bngmuxzytxpivibgjjsb6ufn5qu.woff2) format("woff2")}
+:root{--bg:#000;--panel:#2a0a0a;--deep:#4f0000;--wine:#5f0707;--red:#790404;--accent:#c72c00;--hot:#fa3700;--text:#eee}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;display:flex;flex-direction:column;min-height:100vh;background:var(--bg) linear-gradient(180deg,var(--panel),#000 55%);color:var(--text);font:16px/1.6 "Roboto",-apple-system,Arial,sans-serif;text-align:center}
+main{flex:1;max-width:900px;width:100%;margin:0 auto;padding:clamp(2.5rem,8vh,5rem) 1rem 3rem}
+h1{font-family:"Spectral SC",serif;font-weight:400;letter-spacing:.08em;color:#fff;font-size:clamp(1.6rem,5.5vw,3rem);margin:0 0 .6rem}
+h1 .rule{color:var(--accent)}
+.tagline{font-family:"Roboto Slab",serif;font-style:italic;color:#ddd;font-size:clamp(1rem,2.6vw,1.3rem);margin:0 0 2rem}
+.portrait{margin:0 auto 2rem}
+.portrait img{max-width:min(100%,420px);height:auto;border:1px solid var(--wine);box-shadow:0 0 30px var(--red)}
+.social{list-style:none;padding:0;margin:0 0 2.5rem;display:flex;justify-content:center;gap:1.5rem}
+.social a{font-family:"Spectral SC",serif;color:var(--accent);text-decoration:none;letter-spacing:.06em}
+.social a:hover,.social a:focus{color:var(--hot)}
+.sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:640px;margin:0 auto 2.5rem}
+.sections a{font-family:"Spectral SC",serif;font-size:clamp(1rem,2.6vw,1.4rem);letter-spacing:.06em;color:#fff;text-decoration:none;padding:.7rem 1rem;border:2px solid var(--accent);background:var(--deep);transition:background .2s}
+.sections a:hover,.sections a:focus{background:var(--accent)}
+.contact{font-family:"Roboto Slab",serif;color:#ddd}
+footer{background:var(--wine);padding:.8rem;font-size:.85rem;color:#ddd}
+footer p{margin:0}
+@media (max-width:520px){.sections{grid-template-columns:1fr}}
